@@ -1,14 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('hello 1') {
+        stage('hello name') {
             steps {
-                echo "Hello 1" 
+                sh "chmod +x hello.sh" 
+                sh "./hello.sh mohammed"
             }
         }
-        stage('Hello 2') {
+        stage('Hello object') {
             steps {
-                echo "Hello 2"
+                sh "chmod +x hello.sh"
+                sh "./hello.sh jenkins"
             }
         }
     }
