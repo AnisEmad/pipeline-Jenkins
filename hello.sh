@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "lol what?" $1
+echo "who said that?" $1
