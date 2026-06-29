@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "hello" $1
+echo "lol what?" $1
