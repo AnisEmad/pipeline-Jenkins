@@ -3,14 +3,7 @@ pipeline {
     stages {
         stage('hello name') {
             steps {
-                sh "chmod +x hello.sh" 
-                sh "./hello.sh mohammed"
-            }
-        }
-        stage('Hello object') {
-            steps {
-                sh "chmod +x hello.sh"
-                sh "./hello.sh jenkins"
+                sh 'echo ${GiT_BRANCH}'
             }
         }
     }
